@@ -15,11 +15,15 @@ body main {
   width: 350px;
   margin: 1em auto;
 }
+body h1 {
+  font-size: 3em;
+}
 body p {
   text-align: center;
 }
 body button {
   width: 200px;
+  display: block;
   margin: 0 auto;
   padding: 0.5em 0.5em;
   background: var(--black);
