@@ -1,40 +1,85 @@
 :root {
-  --bg-black: #222222;
+  --darkbg: #222222;
   --black: #000000;
-  --white: #ffffff;
+  --white: #FFFFFF;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  max-width: 60ch;
-  font-weight: 400;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body main {
-  width: 350px;
-  margin: 1em auto;
-}
-body h1 {
-  font-size: 3em;
-}
-body p {
-  text-align: center;
-}
-body button {
-  width: 200px;
+body .logo {
   display: block;
   margin: 0 auto;
-  padding: 0.5em 0.5em;
+  margin-top: 1em;
+}
+body p {
+  max-width: 65ch;
+}
+body a, body button {
+  cursor: pointer;
+}
+body main {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+body main .txt-centre {
+  text-align: center;
+}
+body main p, body main form {
+  margin: 0 auto;
+}
+body main form {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+body main form label {
+  font-size: 0.8em;
+}
+body main form input {
+  height: 2em;
+  border: black solid 2px;
+  border-radius: 8px;
+  padding: 0.5em;
+}
+body main form button {
+  width: 200px;
+  display: block;
+  margin: 1em auto;
   background: var(--black);
   color: var(--white);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
+  padding: 0.8em 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
-
-footer {
-  position: absolute;
-  bottom: 0;
+body main .socials {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+body main .socials a {
+  cursor: pointer;
+  padding: 0.8em;
+  border-radius: 50%;
+  border: var(--black) solid 1px;
+}
+body main .socials a:hover, body main .socials a:active {
+  background: var(--black);
+}
+body main .countdown {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 1em 0.5em;
+  margin: 2em auto;
+  max-width: 700px;
+}
+body main .countdown .time-left {
+  font-size: 2em;
 }/*# sourceMappingURL=style.css.map */

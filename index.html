@@ -10,15 +10,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&  display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./app.js" defer></script>
 </head>
 <body>
+  <a href="#"><img class="logo" height="100" src="./assets/logofull.svg" alt=""></a>
   <main>
-    <h1>COMING SOON...</h1>
-    <p>
-      Be the first to experience the future of mobile shopping. Get up to 3 FREE exclusive accessories with the first phone purchase made through our new site! Stay tuned — big deals and bold tech are just around the corner.
-    </p>
-    <button>Notify Me</button>
-  </main>
+    <p class="txt-centre">Be the first to experience the future of mobile shopping. Get upto <span> 3 FREE</span> exclusive accessories with the first phone purchase made through our new site! Stay tuned - big deals and bold tech just around the corner.</p>
+    <form action="https://formsubmit.co/my6ntertainment@gmail.com" method="POST">
+    <label for="username">Your Name</label>
+    <input type="text" name="name" placeholder="eg: Joan Doe" id="username" required>
+    <label for="mail">Your Email</label>
+    <input type="email" name="email" placeholder="example@mail.com" id="mail" required>
+    <label for="phoneNo">Your Phone No</label>
+    <input type="number" name="phone" placeholder="eg: 0712345678" id="phoneNo" required>
+
+    <button type="submit">Notify Me</button>
+    </form>
+    <div>
+        <h3 class="txt-centre">We'd Love to hear from you contact us through social media.</h3>    
+            <div class="socials">
+                <a target="_blank" href="#">
+                    <img height="30" src="./assets/fa-brands_whatsapp-square.svg" alt="">
+                </a>
+                <a target="_blank" href="#">
+                    <img height="30" src="./assets/logos_tiktok-icon.svg" alt="">
+                </a>
+                <a target="_blank" href="#">
+                    <img height="30" src="./assets/skill-icons_instagram.svg" alt="">
+                </a>
+            </div> 
+            <div class="countdown">
+                <h3 class="txt-centre">COUNTDOWN</h3>
+                <div id="countdown" class="time-left txt-centre"></div>
+            </div>
+    </div>
+</main>
   <footer>
     <small>© <script>document.write(new Date().getFullYear())</script> SURREAL TECH. All Rights Reserved.</small>
   </footer>
