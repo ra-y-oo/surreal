@@ -123,6 +123,7 @@ body .features .feature {
 body .discount {
   text-align: left;
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 body .discount form {
