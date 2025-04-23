@@ -1,0 +1,170 @@
+:root {
+  --darkbg: #222222;
+  --black: #000000;
+  --white: #FFFFFF;
+  --txt-light: #555;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+body h1 {
+  font-size: clamp(1.8rem, 6vw + 1rem, 5rem);
+}
+body h2 {
+  font-size: clamp(1.5rem, 5vw + 1rem, 3rem);
+}
+body h3 {
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.5rem);
+}
+body p {
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.5rem);
+  color: var(--txt-light);
+}
+body a {
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.5rem);
+}
+body input, body textarea {
+  padding: min(1.2em, 2%);
+  border-radius: 8px;
+  border: solid var(--black) 1px;
+}
+body ::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+body ::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+body .container {
+  margin-inline: auto;
+  text-align: center;
+  padding: min(3em, 5%);
+}
+body button {
+  padding: 0.5em 1.5em;
+  font-size: clamp(1.2rem, 2vw + 1rem, 1.1rem);
+}
+body .light-btn {
+  border: solid var(--black) 2px;
+  color: var(--black);
+  border-radius: 20px;
+  background-color: var(--white);
+}
+body .dark-btn {
+  border: none;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 20px;
+}
+body nav {
+  width: auto;
+  border-bottom: solid var(--black) 4px;
+  padding: 1em;
+}
+body nav a {
+  color: var(--txt-light);
+  text-decoration: none;
+}
+body nav a:hover, body nav a:active, body nav .active {
+  color: var(--black);
+  text-decoration: underline;
+  font-size: 1.8em;
+}
+body nav header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav .login-btn {
+  font-family: "Montserrat", sans-serif;
+}
+body nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  body nav .nav-menu {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1em;
+    justify-content: space-around;
+  }
+}
+body .hero-img {
+  display: block;
+  margin: 1em auto;
+}
+body .store {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+body .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+body .features .feature {
+  border: solid var(--txt-light) 2px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 200px;
+  padding: 2em;
+}
+body .discount {
+  text-align: left;
+  display: flex;
+  gap: 1em;
+}
+body .discount form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body .discount form label {
+  text-align: left;
+}
+@media screen and (min-width: 600px) {
+  body .discount {
+    gap: 5em;
+    justify-content: space-around;
+  }
+  body .discount form {
+    max-width: 50%;
+  }
+}
+body .socials {
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-around;
+}
+body .contact {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 20px;
+}
+body .contact p {
+  color: var(--white);
+}
+body .contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+body .contact form textarea {
+  min-height: 100px;
+}
+body .contact form label {
+  text-align: left;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,170 @@
+:root{
+    --darkbg: #222222;
+    --black: #000000;
+    --white: #FFFFFF;
+    --txt-light: #555;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+//UNIVERSAL STYLES
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: clamp(1.8rem, calc(6vw + 1rem) , 5rem);
+    }
+    h2{
+        font-size: clamp(1.5rem, calc(5vw + 1rem) , 3rem);
+    }
+    h3{
+        font-size: clamp(.8rem, calc(2vw + 1rem) , 1.5rem);
+    }
+    p{
+        font-size: clamp(.8rem, calc(2vw + 1rem) , 1.5rem);
+        color: var(--txt-light);
+    }
+    a{
+        font-size: clamp(.8rem, calc(2vw + 1rem) , 1.5rem);
+    }
+    input, textarea{
+        padding: min(1.2em, 2%);
+        border-radius: 8px;
+        border: solid var(--black) 1px;
+    }
+    ::placeholder{
+        font-family: "Montserrat", sans-serif;
+    }
+    .container{
+        margin-inline: auto;
+        text-align: center;
+        padding: min(3em, 5%);
+    }
+    button{
+        padding: .5em 1.5em;
+        font-size: clamp(1.2rem, calc(2vw + 1rem), 1.1rem);
+    }
+    .light-btn{
+        border: solid var(--black) 2px;
+        color: var(--black);
+        border-radius: 20px;
+        background-color: var(--white);
+    }
+    .dark-btn{
+        border: none;
+        background: var(--black);
+        color: var(--white);
+        border-radius: 20px;
+    }
+
+    nav{
+        width: auto;
+        border-bottom: solid var(--black) 4px;
+        padding: 1em;
+        a{
+            color: var(--txt-light);
+            text-decoration: none;
+        }
+        a:hover, a:active, .active{
+            color: var(--black);
+            text-decoration: underline;
+            font-size: 1.8em;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login-btn{
+            font-family: "Montserrat", sans-serif;
+        }
+        .nav-menu{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 600px) {
+            .nav-menu{
+            flex-direction: row;
+            align-items: baseline;
+            gap: 1em;
+            justify-content: space-around;
+        }
+        }
+    }
+    .hero-img{
+        display: block;
+        margin: 1em auto;
+    }
+    .store{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+    .features{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        .feature{
+            border: solid var(--txt-light) 2px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            max-width: 200px;
+            padding: 2em;
+        }
+    }
+    .discount{
+        text-align: left;
+        display: flex;
+        gap: 1em;
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            label{
+                text-align: left;
+            }
+        }
+       
+    } 
+    @media screen and (min-width:600px){
+        .discount{
+            gap: 5em;
+            justify-content: space-around;
+                form{
+                    max-width: 50%;
+                }
+            }
+        }
+    .socials{
+        display: flex;
+        gap: .5em;
+        justify-content: space-around;
+    }
+    .contact{
+        background: var(--black);
+        color: var(--white);
+        border-radius: 20px;
+        p{
+            color: var(--white);
+        }
+     form{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        width: 100%;
+        textarea{
+            min-height: 100px;
+        }
+        label{
+            text-align: left;
+        }
+    }
+    }
+}
